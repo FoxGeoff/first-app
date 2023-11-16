@@ -13,7 +13,7 @@
 ### Step 2 - Add the new component to your app's layout
 
 1 Import HomeComponent in src/app/app.component.ts
-2 Add 
+2 Add:
 
 ```typescript
 import { Component } from '@angular/core';
