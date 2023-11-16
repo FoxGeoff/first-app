@@ -45,3 +45,5 @@ export class AppComponent {
 ```
 
 ### Step 3 - Add features to HomeComponent
+
+## Lesson 3: Create the application’s HousingLocation component
