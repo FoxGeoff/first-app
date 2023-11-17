@@ -51,3 +51,8 @@ export class AppComponent {
 1. Run `ng generate component housingLocation --inline-template --skip-tests`
 2. Import HousingLocationComponent in src/app/home/home.component.ts
 
+## First Angular app lesson 4 - Creating an interface
+
+1. Run `ng generate interface housinglocation`
+
+## Step 3 - Create a test house for your app
