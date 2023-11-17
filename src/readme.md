@@ -60,3 +60,5 @@ export class AppComponent {
 ## Lesson 5: Add an input parameter to the component
 
 ### Step 1 - Import the Input decorator
+
+## Lesson 8: Use *ngFor to list objects in component
