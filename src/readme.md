@@ -55,4 +55,8 @@ export class AppComponent {
 
 1. Run `ng generate interface housinglocation`
 
-## Step 3 - Create a test house for your app
+### Step 3 - Create a test house for your app
+
+## Lesson 5: Add an input parameter to the component
+
+### Step 1 - Import the Input decorator
