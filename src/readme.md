@@ -47,3 +47,7 @@ export class AppComponent {
 ### Step 3 - Add features to HomeComponent
 
 ## Lesson 3: Create the application’s HousingLocation component
+
+1. Run `ng generate component housingLocation --inline-template --skip-tests`
+2. Import HousingLocationComponent in src/app/home/home.component.ts
+
