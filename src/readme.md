@@ -70,3 +70,8 @@ export class AppComponent {
 ### Step 2 - Add static data to the new service
 
 ## Lesson 10: Add routes to the application
+
+1. Step 1 - Create a default details component
+2. Run: `ng generate component details --inline-template --skip-tests`
+3. Step 2 - Add routing to the application
+4. Step 3 - Add route to new component
