@@ -62,3 +62,9 @@ export class AppComponent {
 ### Step 1 - Import the Input decorator
 
 ## Lesson 8: Use *ngFor to list objects in component
+
+## Lesson 09: Angular services
+
+1. Run: `ng generate service housing --skip-tests`
+
+### Step 2 - Add static data to the new service
