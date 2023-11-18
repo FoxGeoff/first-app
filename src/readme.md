@@ -68,3 +68,5 @@ export class AppComponent {
 1. Run: `ng generate service housing --skip-tests`
 
 ### Step 2 - Add static data to the new service
+
+## Lesson 10: Add routes to the application
