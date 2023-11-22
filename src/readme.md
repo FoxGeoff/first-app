@@ -79,4 +79,4 @@ export class AppComponent {
 ## Lesson 11 - Integrate details page into application
 
 1. Step 1 - Create a new service for your app
-2. vv
+2. Step 2 <https://angular.io/tutorial/first-app/first-app-lesson-11#lesson-11---integrate-details-page-into-application>
