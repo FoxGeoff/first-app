@@ -92,3 +92,11 @@ submitApplication(firstName: string, lastName: string, email: string) {
 ```
 
 1. Link <https://angular.io/tutorial/first-app/first-app-lesson-12#lesson-12-adding-a-form-to-your-angular-app>
+
+## TODO
+
+## Lesson 13: Add the search feature to your app
+
+## Lesson 14: Add HTTP communication to your app
+
+## ALL DONE!
