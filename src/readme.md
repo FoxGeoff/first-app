@@ -75,3 +75,8 @@ export class AppComponent {
 2. Run: `ng generate component details --inline-template --skip-tests`
 3. Step 2 - Add routing to the application
 4. Step 3 - Add route to new component
+
+## Lesson 11 - Integrate details page into application
+
+1. Step 1 - Create a new service for your app
+2. vv
