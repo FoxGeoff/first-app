@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 //routes
-import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router'; // <== FIX for routerLink Error
 
 
 @Component({
