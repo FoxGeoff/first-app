@@ -99,4 +99,4 @@ submitApplication(firstName: string, lastName: string, email: string) {
 
 ## Lesson 14: Add HTTP communication to your app
 
-## ALL DONE!
+## ALL DONE
