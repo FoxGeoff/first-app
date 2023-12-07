@@ -111,6 +111,33 @@ submitApplication(firstName: string, lastName: string, email: string) {
   }
 ```
 
+### Step 2 - Update the home component template
+
+1. home.component.ts
+2. Add a template variable to HomeComponent's template
+3. Add: `<input type="text" placeholder="Filter by city" #filter>`
+4. Bind the click event
+5. Add: `<button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>`
+6. Update the ngFor directive value
+7. Add: <app-housing-location *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation"></app-housing-location>`
+
+### Step 3 - Implement the event handler function
+
+1. Add the filterResults function implementation
+2. Add
+
+```typescript
+filterResults(text: string) {
+  if (!text) {
+    this.filteredLocationList = this.housingLocationList;
+    return;
+  }
+
+  this.filteredLocationList = this.housingLocationList.filter(
+    housingLocation => housingLocation?.city.toLowerCase().includes(text.toLowerCase())
+  );
+}
+```
 
 ## Lesson 14: Add HTTP communication to your app
 
