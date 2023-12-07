@@ -97,6 +97,21 @@ submitApplication(firstName: string, lastName: string, email: string) {
 
 ## Lesson 13: Add the search feature to your app
 
+### Step 1 - Update the home component properties
+
+1. Ref: <https://angular.io/tutorial/first-app/first-app-lesson-13#step-1---update-the-home-component-properties>
+2. File `home.component.ts`
+3. Add: New property: `filteredLocationList: HousingLocation[] = [];`
+4. Set values:
+
+```TypeScript
+  constructor() {
+    this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.filteredLocationList = this.housingLocationList;   // <==
+  }
+```
+
+
 ## Lesson 14: Add HTTP communication to your app
 
 ## ALL DONE
