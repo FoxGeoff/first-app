@@ -141,4 +141,64 @@ filterResults(text: string) {
 
 ## Lesson 14: Add HTTP communication to your app
 
+### Step 1 - Configure the JSON server
+
+1. run `npm install -g json-server`
+2. run `json-server --watch db.json`
+3. ref <https://www.npmjs.com/package/json-server>
+4. In root add db.json
+
+### Step 2 - Update service to use web server instead of local array
+
+1. `url = 'http://localhost:3000/locations'; //home.servce.ts`
+2. file getAllHousingLocations update getAllHousingLocations
+3. update `async getHousingLocationById(id: number): Promise<HousingLocation`
+4. Final version of housing.service.ts
+
+```typescript
+import { Injectable } from '@angular/core';
+import { HousingLocation } from './housinglocation';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HousingService {
+
+  url = 'http://localhost:3000/locations';
+
+  async getAllHousingLocations(): Promise<HousingLocation[]> {
+    const data = await fetch(this.url);
+    return await data.json() ?? [];
+  }
+
+  async getHousingLocationById(id: number): Promise<HousingLocation | undefined> {
+    const data = await fetch(`${this.url}/${id}`);
+    return await data.json() ?? {};
+  }
+
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(firstName, lastName, email);
+  }
+}
+```
+
+### Step 3 - Update the components to use asynchronous calls to the housing service
+
+```Typescript
+//home.component.ts
+constructor() {
+  this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
+    this.housingLocationList = housingLocationList;
+    this.filteredLocationList = housingLocationList;
+  });
+}
+
+//details.component.ts
+constructor() {
+  const housingLocationId = parseInt(this.route.snapshot.params['id'], 10);
+  this.housingService.getHousingLocationById(housingLocationId).then(housingLocation => {
+    this.housingLocation = housingLocation;
+  });
+}
+
 ## ALL DONE
